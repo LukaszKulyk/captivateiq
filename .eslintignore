@@ -1,0 +1,5 @@
+api
+web
+*/reports/*
+e2e/**/index.js
+!.eslintrc.js

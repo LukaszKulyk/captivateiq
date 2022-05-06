@@ -1,0 +1,5 @@
+api/**/*
+web/**/*
+node_modules
+e2e/**/index.js
+e2e/reports

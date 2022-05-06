@@ -1,0 +1,58 @@
+{
+  "name": "web",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "react-scripts": "5.0.0",
+    "styled-components": "^5.3.5",
+    "twin.macro": "^1.12.1"
+  },
+  "scripts": {
+    "start": "env-cmd -f .env.development react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "cy:verify": "cypress verify",
+    "cy:info": "cypress info",
+    "cy:run": "cypress run",
+    "cy:open": "cypress open",
+    "integration": "npm run cy:run",
+    "cy:check": "prettier --check 'cypress/**/*.js'",
+    "cy:format": "prettier --write 'cypress/**/*.js'",
+    "cy:lint": "eslint 'cypress/**/*.js'",
+    "cy:fix": "eslint --fix 'cypress/**/*.js'"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "babelMacros": {
+    "twin": {
+      "preset": "styled-components",
+      "config": "src/tailwind.config.js",
+      "autoCssProp": true
+    }
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "cypress": "9.5.3",
+    "eslint": "8.12.0",
+    "eslint-config-prettier": "8.5.0",
+    "eslint-plugin-cypress": "2.12.1",
+    "eslint-plugin-prettier": "4.0.0",
+    "prettier": "2.6.1",
+    "env-cmd": "10.1.0"
+  }
+}

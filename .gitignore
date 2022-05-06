@@ -1,0 +1,25 @@
+# Editor
+.idea
+.vscode
+
+# Dependency directory
+# https://www.npmjs.org/doc/misc/npm-faq.html#should-i-check-my-node_modules-folder-into-git
+node_modules
+
+# Filesystem
+.DS_Store
+
+# Cypress test runner related
+e2e/videos
+e2e/screenshots
+e2e/reports
+e2e/cucumber-json
+e2e/**/example.json
+
+# Guys at CIQ
+app.sqlite
+__pycache__/
+*.py[cod]
+.env*
+report.html
+api/assets
